@@ -1,0 +1,12 @@
+{% autoescape off %}
+<!--Email message here-->
+Dear {{ user.first_name }} <br />
+
+Thank you for signing up with Carts.<br />
+
+Kindly confirm your registration below : <br />
+http://{{domain}}{% url 'activate' uidb64=uid token=token %} <br />
+
+If you have not registered, please ignore this email <br />
+
+{% endautoescape %}
