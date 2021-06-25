@@ -53,6 +53,8 @@
 
     <!-- custom javascript -->
     <script src="{% static 'js/script.js'%}" type="text/javascript"></script>
+    <!-- PayPal script -->
+    <script src="https://www.paypal.com/sdk/js?client-id=AfW0GXctC1HBsFnsCqzZIsdR225GTs9p6vsbiD6WVSc-BwjaDiMDiCdO3o_11aC3nlLXL1-3Dk9hWv1u&currency=SGD"></script>
 
     <script type="text/javascript">
       /// some script
@@ -65,12 +67,17 @@
     </script>
   </head>
   <body>
+
     <!-- navbar -->
     {% include 'includes/navbar.html' %}
     <!-- content -->
-    {% block content %} <--load content --> {%endblock%}
+    
+    {% block content %} 
+    <!--load content --> 
+    {%endblock%}
 
     <!-- footer -->
     {% include 'includes/footer.html' %}
+    
   </body>
 </html>
