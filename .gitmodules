@@ -1,0 +1,4 @@
+[submodules "kart"]
+    path = kart
+    url = https://github.com/Stephyo/kart.git
+
